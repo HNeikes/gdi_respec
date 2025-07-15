@@ -1,114 +1,25 @@
 <pre class='metadata'>
-Title: Health-RI Metadata Model
-Shortname: your-spec
+Title: GDI Harmonised Minimal Data Model
+Shortname: GDI HMD
 status: LD
 level: none
-TR: https://w3id.org/health-ri/metadata/releases/latest
 URL: https://hneikes.github.io/gdi/ 
-Previous Version: https://w3id.org/health-ri/metadata/releases
 Status Text: status text
-Repository: w3id.org/health-ri/metadata/git
-Editor: Hannah Neikes, hannah.neikes@health-ri.nl
-Editor: Ana Konrad, ana.konrad@health-ri.nl
-Editor: Pedro Paulo Favato Barcelos, Pedro.Barcelos@health-ri.nl
-Editor: Reinier Groeneveld, Reinier.Groeneveld@health-ri.nl
-Editor: Also Editor? Please send your name and email to Reinier.
+Editor: Hannah Neikes
+Editor: Ana Konrad
+Editor: Jeroen Beliën
+Editor: Joeri van der Velde
+Editor: Abhishek Nayak
+Editor: Aedin Culhane
 Warning: not ready
-Logo: health-ri logo
-Favicon: favicon url
-Canonical URL: canonical url
-Former Editor: Niek van Ulzen.
-Former Editor: Former editor? Please send your name and email to Reinier.
-Abstract: <img src="https://raw.githubusercontent.com/ReinierGr/metadata-vocabulary/main/src/new/images/HRI_Logo.png" alt="" title=""> <br/> The National Health Data Catalogue uses a core metadata schema: a set of minimal elements for describing each resource (e.g. dataset) with common metadata. It defines the requirements to access and reuse information across Health-RI nodes via the National Catalogue. This document contains the specification details on the Health-RI core metadata schema.
+
+Abstract: <img src="src/new/images/gdi-logo.svg" alt="" title=""> <br/> Some context about the GDI HMD.
 Markup Shorthands: markdown yes, css no
 </pre>
 
 
 
 <pre class=include>
-path: src/new/style-tables.md
-</pre>
-
-<pre class=include>
-path: src/new/permanent-urls.md
-</pre>
-
-<pre class=include>
-path: src/new/previous-published.md
-</pre>
-
-<pre class=include>
-path: src/new/purpose-and-audience.md
-</pre>
-
-<pre class=include>
 path: src/new/introduction.md
 </pre>
 
-<pre class=include>
-path: src/new/main-and-support-classes.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-classtext.md
-</pre>
-
-<pre class=include>
-path: src/new/style-tables2.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-agent.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-attribution.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-catalog.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-checksum.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-data-service.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-dataset.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-dataset-series.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-distribution.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-identifier.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-kind.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-period-of-time.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-quality-certificate.md
-</pre>
-
-<pre class=include>
-path: src/new/properties-relationship.md
-</pre>
-
-<pre class=include>
-path: src/new/further-information.md
-</pre>
