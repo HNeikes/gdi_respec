@@ -1,4 +1,5 @@
 # Introduction # {#introduction}
+Some info about GDI here.
 
 ## Scope and Current State of the Schema
 Building on the [1st version of the metadata schema](https://github.com/Health-RI/health-ri-metadata/tree/master), version 2 aims to incorporate both [DCAT-AP NL](https://geonovum.github.io/DCAT-AP-NL30/) and the (yet-to-be-finalized) [HealthDCAT-AP](https://healthdcat-ap.github.io/), along with Health-RI-specific requirements for the [National Health Data Catalogue](https://catalogus.healthdata.nl/). It introduces several health-related properties (marked in blue in the UML diagram below), with suggested or required controlled vocabularies where applicable.
