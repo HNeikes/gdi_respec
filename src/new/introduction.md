@@ -1,6 +1,8 @@
 # Introduction # {#introduction}
 Some info about GDI here.
 
+This is version 1.0
+
 ## Scope and Current State of the Schema
 
   
