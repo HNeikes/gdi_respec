@@ -1,4 +1,44 @@
-# This workflow converts your bikeshed (.bs) file to html and pushes to gh-pages
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']  # Add this line to trigger on version tags
+
+jobs:
+  main:
+    name: Build, Validate and Deploy
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: w3c/spec-prod@v1
+        with:
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_LINKS: false
+          VALIDATE_MARKUP: false
+
+      - name: Prepare versioned deployment
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          mkdir -p public/${VERSION}
+          cp index.html public/${VERSION}/
+          # Also update /latest
+          mkdir -p public/latest
+          cp index.html public/latest/
+
+      - name: Prepare main branch deployment (as latest)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          mkdir -p public/latest
+          cp index.html public/latest/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public# This workflow converts your bikeshed (.bs) file to html and pushes to gh-pages
 
 name: CI
 
